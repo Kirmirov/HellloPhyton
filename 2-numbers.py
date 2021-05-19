@@ -13,61 +13,61 @@ print('Введите первое число: ', end='')
 a = int(input())
 print('Введите второе число: ', end='')
 b = int(input())
-print(a, 'СѓРјРЅРѕР¶РµРЅРЅРѕРµ РЅР°', b, 'СЂР°РІРЅРѕ', a * b)
-print(a, 'РґРµР»РµРЅРЅРѕРµ РЅР°', b, 'СЂР°РІРЅРѕ', a / b)
-print(a, 'РЅР°С†РµР»Рѕ РґРµР»РµРЅРЅРѕРµ РЅР°', b, 'СЂР°РІРЅРѕ', a // b)
-print('РћСЃС‚Р°С‚РѕРє РѕС‚ РґРµР»РµРЅРёСЏ', a, 'РЅР°', b, 'СЂР°РІРµРЅ', a % b)
-print(a, 'РІ СЃС‚РµРїРµРЅРё', b, 'СЂР°РІРЅРѕ', a ** b)
+print(a, 'умноженное на', b, 'равно', a * b)
+print(a, 'деленное на', b, 'равно', a / b)
+print(a, 'нацело деленное на', b, 'равно', a // b)
+print('Остаток от деления', a, 'на', b, 'равен', a % b)
+print(a, 'в степени', b, 'равно', a ** b)
 print('****************************************')
 
 # Third task
-print('Р’РІРµРґРёС‚Рµ С‚СЂРµС…Р·РЅР°С‡РЅРѕРµ С‡РёСЃР»Рѕ: ', end='')
+print('Введите целое трехзначное положительное число: ', end='')
 wholeNum = int(input())
 firstNum = wholeNum // 100
 secondNum = (wholeNum // 10) % 10
 thirdNum = wholeNum % 10
 numSum = firstNum + secondNum + thirdNum
-print('РЎСѓРјРјР° С†РёС„СЂ С‡РёСЃР»Р°', wholeNum, 'СЂР°РІРЅР°', numSum)
+print('Сумма цифр числа', wholeNum, 'равна', numSum)
 print('****************************************')
 
 # Fourth task
-print('Р’РІРµРґРёС‚Рµ СЃС‚РѕРёРјРѕСЃС‚СЊ РјСЏС‡Р° РІ СЂСѓР±Р»СЏС…: ', end='')
+print('Введите цену мяча в рублях: ', end='')
 ruble = int(input())
-print('Р� СЃ РєРѕРїРµР№РєР°РјРё: ', end='')
+print('в копейках: ', end='')
 penny = int(input())
-print('Р’РІРµРґРёС‚Рµ РєРѕР»Р»РёС‡РµСЃС‚РІРѕ РјСЏС‡РµР№ РґР»СЏ РїСЂРёРѕР±СЂРµС‚РµРЅРёСЏ: ', end='')
+print('Введите количество приобретаемых мячей: ', end='')
 ballCount = int(input())
 sumInPenny = (penny * ballCount) % 100
 sumInRuble = (ruble * ballCount) + penny // 100
-print('Р—Р°', ballCount, 'РјСЏС‡РµР№ РЅСѓР¶РЅРѕ Р·Р°РїР»Р°С‚РёС‚СЊ', sumInRuble, 'СЂСѓР±Р»РµР№', sumInPenny, 'РєРѕРїРµРµРє')
+print('За', ballCount, 'мяча нужно заплатить', sumInRuble, 'рублей и', sumInPenny, 'копеек')
 print('****************************************')
 
 # Fifth task
-print('Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРµРєСѓРЅРґ: ', end='')
+print('Введите количество секунд: ', end='')
 time = int(input())
 seconds = time % 60
 minutes = (time // 60) % 60
 hours = (time // 60) // 60
-print(time, 'СЃРµРєСѓРЅРґ - СЌС‚Рѕ', hours, 'С‡Р°СЃ', minutes, 'РјРёРЅСѓС‚', seconds, 'СЃРµРє')
+print(time, 'секунд - это', hours, 'часов', minutes, 'минут', seconds, 'секунд')
 print('****************************************')
 
 # Sixth task
-print('Р’РІРµРґРёС‚Рµ С‡РµС‚С‹СЂРµС…Р·РЅР°С‡РµРЅРѕРµ С‡РёСЃР»Рѕ: ', end='')
+print('Введите целое четырехзначное число: ', end='')
 wholeNum = int(input())
 firstNum = wholeNum // 1000
 secondNum = (wholeNum // 100) % 10
 thirdNum = (wholeNum // 10) % 10
 fourthNum = wholeNum % 10
 maxNum = max(firstNum, secondNum, thirdNum, fourthNum)
-print('РЈ С‡РёСЃР»Р°', wholeNum, 'РјР°РєСЃРёРјР°Р»СЊРЅР°СЏ С†РёС„СЂР° СЂР°РІРЅР°', maxNum)
+print('У числа', wholeNum, 'максимальная цифра равна', maxNum)
 print('****************************************')
 
 # Seventh task
-print('Р’РІРµРґРёС‚Рµ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ, РЅРµ РїСЂРµРІРѕСЃС…РѕРґСЏС‰РµРµ 1 000 000 000: ', end='')
+print('Введите натуральное число, не превосходящее 1 000 000 000: ', end='')
 numberStr = input()
 lastNumberGroup = int(numberStr[-3:])
 firstNum = lastNumberGroup // 100
 secondNum = (lastNumberGroup // 10) % 10
 thirdNum = lastNumberGroup % 10
 numSum = firstNum + secondNum + thirdNum
-print('РЎСѓРјРјР° РїРѕСЃР»РµРґРЅРёС… С‚СЂРµС… С†РёС„СЂ С‡РёСЃР»Р°', numberStr, 'СЂР°РІРЅР°', numSum)
+print('У числа', numberStr, 'сумма последних трех цифр равна', numSum)
