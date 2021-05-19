@@ -31,10 +31,8 @@ print('Сумма цифр числа', wholeNum, 'равна', numSum)
 print('****************************************')
 
 # Fourth task
-print('Введите цену мяча в рублях: ', end='')
-ruble = int(input())
-print('в копейках: ', end='')
-penny = int(input())
+print('Введите через пробел цену мяча в рублях и копейках: ', end='')
+ruble, penny = map(int, input().split())
 print('Введите количество приобретаемых мячей: ', end='')
 ballCount = int(input())
 sumInPenny = (penny * ballCount) % 100
