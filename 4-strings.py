@@ -11,7 +11,7 @@ print('****************************************')
 print('Введите текст: ', end='')
 text = input()
 
-if text in 'Glo Academy':
+if 'Glo Academy' in text:
     print('YES')
 else:
     print('NO')
@@ -19,19 +19,25 @@ else:
 print('****************************************')
 
 # Third task
-print('Введите название статьи: ', end='')
-articleOne = input()
-print('Введите название статьи: ', end='')
-articleTwo = input()
-print('Введите название статьи: ', end='')
-articleThree = input()
+print('Введите название первой статьи: ', end='')
+artOne = input()
+print('Введите название второй статьи: ', end='')
+artTwo = input()
+print('Введите название третьей статьи: ', end='')
+artThree = input()
 
-if len(articleOne) > len(articleTwo) and len(articleOne) > len(articleThree):
-    print(articleOne)
-if len(articleTwo) > len(articleOne) and len(articleTwo) > len(articleThree):
-    print(articleTwo)
-if len(articleThree) > len(articleOne) and len(articleThree) > len(articleTwo):
-    print(articleThree)
+lenArtOne = len(artOne)
+lenArtTwo = len(artTwo)
+lenArtThree = len(artThree)
+
+maxArt = max(lenArtOne, lenArtTwo, lenArtThree)
+
+if maxArt == lenArtOne:
+    print(artOne)
+elif maxArt == lenArtTwo:
+    print(artTwo)
+else:
+    print(artThree)    
 
 print('****************************************')
 
@@ -46,7 +52,7 @@ print('****************************************')
 print('Введите email: ', end='')
 email = input()
 
-if email in '@':
+if '@' in email:
     print('Корректный')
 else:
     print('Некорректный')
