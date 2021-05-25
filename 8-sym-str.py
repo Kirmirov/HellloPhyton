@@ -36,8 +36,10 @@ while True:
         break
     if ord(ch) >= 65 and ord(ch) <= 90:
         print(ch.lower())
-    if ord(ch) >= 97 and ord(ch) <= 122:
+    elif ord(ch) >= 97 and ord(ch) <= 122:
         print(ch.upper())
+    else:
+        print(ch)
 print('****************************************')
 
 # Fifth task
