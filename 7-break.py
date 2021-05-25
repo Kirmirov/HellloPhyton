@@ -108,8 +108,10 @@ print('****************************************')
 # Nineth task
 print('Введите число: ', end='')
 num = int(input())
-while num > 9:
-    i = int(num % 10)
-    num = num // 10
-    num = num + i
+while (num > 10):
+    i = num
+    num = 0
+    while (i > 0):
+        num += i % 10
+        i //= 10
 print('Цифровой корень числа равен: ', num)
