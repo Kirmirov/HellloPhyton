@@ -1,6 +1,6 @@
-# -*- coding: utf-8 -*-
-
 # First Task
+import math
+
 def get_digital_product(numberOne, numberTwo):
 
     def get_count_rank (number):
@@ -19,7 +19,8 @@ print(get_digital_product(1995, 243))
 def get_product_two_numb(listOne, listTwo):
 
     def get_max_numb(list):
-        max_numb = 0
+        neg_infinity = -math.inf
+        max_numb = neg_infinity
         for numb in list:
             if numb > max_numb:
                 max_numb = numb
@@ -43,15 +44,11 @@ print(get_days_in_month(6))
 print(get_days_in_month(12))
 
 # Fourth Task
-
 def get_price_of_dellivery(goods_count):
-    cost_of_first_good = 100 
-    if goods_count > 1:
-        cost_of_first_good = 50
-
-    return ((goods_count - 1) * 50) + cost_of_first_good
+    return goods_count * 50 + 50
 
 print(get_price_of_dellivery(2))
+print(get_price_of_dellivery(1))
 
 # Fifth Task
 
